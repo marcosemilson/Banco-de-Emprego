@@ -1,0 +1,32 @@
+type Trasactions @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  amount: Int
+  date: AWSDate
+  company: Company @hasOne
+}
+
+enum Location {
+  DISPLAY
+}
+
+type Job @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Applications: String
+  description: String
+  expiry: AWSDate
+  live: Boolean
+  location: Location
+  companyID: ID! @index(name: "byCompany")
+}
+
+type Company @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  about: String
+  employes: String
+  headquarters: String
+  internalNotes: String
+  logo: String
+  creator: String
+  modified: String
+  company: [Job] @hasMany(indexName: "byCompany", fields: ["id"])
+}

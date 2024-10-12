@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bancodeemprego-staging-af743-authRole",
+      "UnauthRoleArn": "arn:aws:iam::058264309958:role/amplify-bancodeemprego-staging-af743-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::058264309958:role/amplify-bancodeemprego-staging-af743-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-bancodeemprego-staging-af743-deployment",
+      "UnauthRoleName": "amplify-bancodeemprego-staging-af743-unauthRole",
+      "StackName": "amplify-bancodeemprego-staging-af743",
+      "StackId": "arn:aws:cloudformation:us-east-1:058264309958:stack/amplify-bancodeemprego-staging-af743/a5d39b90-8804-11ef-8e7d-122e4e40389d",
+      "AmplifyAppId": "d2wqcldnwrq3oz"
+    }
+  }
+}
